@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight:normal;;
+    transition:.3s ease-in-out;
+}
+
+body {
+    margin-top:8px;
+    background: url("/images/background/wiishopbackground.png") top center repeat-y #000444;
+    background-size: 100%;
+    background-color: #FFFF;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+    color:white;
+    transition:.3s ease-in-out;
+    animation: godown .5s;
+    opacity:100%;
+}
+
+@keyframes godown {
+    0% {margin-top:50px; opacity:0%;};
+}
+#details {
+    margin:auto;
+    width:90%;
+    max-width:900px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.123);
+    border-left:1px solid #34beed;
+    border-top:1px solid #34beed;
+    border-right:2px solid #34beed;
+    border-bottom:2px solid #34beed;
+
+    border-radius:3px;
+    color:black;
+    padding:10px; 
+    text-align: center;
+}
+
+#loadicon {
+    width:90px;
+    height:90px;
+    position:absolute;
+    left:80px;
+    top:6px;
+    overflow:hidden;
+}
+
+  
+#wiiring {
+    animation: spinner 1.3s infinite ;
+    transition:.3s ease-in-out;
+}
+@keyframes spinner {
+    0% {transform: rotate(-150deg)}
+    100% {transform: rotate(150deg)};
+}
+
+/* moves the loader if the blue graid borders are visible fully or not */
+
+@media only screen and (min-width:600px) {
+    #loadicon {
+        width:90px;
+        height:90px;
+        position:absolute;
+        left:6px;
+        top:6px;
+        overflow:hidden;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    #loadicon {
+        width:90px;
+        height:90px;
+        position:absolute;
+        left:6px;
+        top:6px;
+        overflow:hidden;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 1024px) {
+    #loadicon {
+        width:90px;
+        height:90px;
+        position:absolute;
+        left:80px;
+        top:6px;
+        overflow:hidden;
+    }
+  }
+  
+  @media only screen and (min-width: 900px) {
+    #loadicon {
+        width:90px;
+        height:90px;
+        position:absolute;
+        left:80px;
+        top:6px;
+        overflow:hidden;
+    }
+  }
+
+/* moves the loader if the blue graid borders are visible fully or not */
+
+
+
+/* other styles */
+button {
+background-color:white;
+color:black;
+font-size:18px;
+text-align:center;
+padding:3px;
+border-radius:2px;
+outline:2px solid #34BEED;
+border:none;
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.226);
+transition: 0s;
+}
+
+button:hover {
+    background-color:white;
+    color:black;
+    font-size:18px;
+    text-align:center;
+    padding:3px;
+    border-radius:2px;
+    outline:3px solid #21b4e6;
+    border:none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.274);
+    transition: 0s;
+    }
