@@ -2,7 +2,7 @@
 
 function initloading() {
     document.getElementById("loadicon").style.display="block";
-    setTimeout(stoploading,4500); // if page dont load past this point loader stops xD
+    setTimeout(stoploading,4300); // if page dont load past this point loader stops xD
     document.getElementById("loadingsound").play();
     document.getElementById("loadingsound").currentTime = 0;
 }
