@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +14,67 @@
     <link rel="stylesheet" href="/styles/main.css">
     <script src="/js/main.js"></script>
     <link rel="stylesheet" href="/wiishopscrollbar/wiiscrollbar.css">
-    <audio src="/bgm/Menu - Club Nintendo 04 Catalog GCN.wav" id="BGM" autoplay="" loop="" preload></audio>
+    <audio src="/sound/wiishopsounds/12.wav" autoplay="" ></audio>
 </head>
 
 <body onload="onload();">
+    <img src="/images/background/bluelinebordr.png" id="borderleft" alt="">
+    <img src="/images/background/bluelinebordr.png" id="borderright" alt="">
+
     <div id="loadicon" style="display:none;"  >
         <img src="/images/ring.png" style="display:flex; margin-top:2px; width:90px; height:90px;" id="wiiring" alt="">
         </div>
         
 
-    <div id="details" >
-        <h2 style="font-weight:bolder;">Welcome to ChrisplayzBLOX/YT's Website!</h2>
-        <h4>this website is just for links, nothin special.</h4>
-        <a href="404.html" onclick="initloading();" onmouseover="wiihover();">testlink</a>
-     
+    <div id="details" style="text-align:center;" >
+
+        <h1 style="font-weight:bolder;">Welcome to ChrisplayzBLOX/YT's Website!</h1>
+        <h3>here are some things you should check out:</h3>
+
+  <div id="stuff" style=" margin:0;; text-align:left;">
+
+    <div id="box" style=" padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+        <img src="/images/Octicons-mark-github.svg" style="position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+        <a href="https://github.com/ChrisplayzYT/"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+            Check out my Github for random projects i do!</a>
+    
+            </div>
+    
+            <div id="box"  style="padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+                <img src="/images/wsc.png" style="position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+    
+         <a href="oldwsvids.html"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+            Check out my collection of old Wii Shop videos that is slowly growing!</a>
+    
+            </div>
+    
+            <div id="box" style="padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+                <img src="/images/REVIIVESHOPBAG.png" style="position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+    
+         <a href="oldreviivevids.html"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+                Check out some old Reviive Shop Channel videos that i have reuploaded after the shutdown</a>
+    
+            </div>
+
+            <div id="box"  style="padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+                <img src="/images/161468698.png" style="position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+    
+         <a href="https://github.com/Reviive-Shop-Channel"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+                Check out the archive of Reviive Shop's Github</a>
+    
+            </div>
+
+            <div id="box" style=" padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+                <img src="/images/gmail.png" style="position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+    
+         <a href="mailto:chrisplayzcontactme@gmail.com"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+                Send me an email at chrisplayzcontactme@gmail.com</a>
+    
+            </div>
+
+  </div>
+
+  <br><br><br>
+  <h2><a href="credits.html">Credits for parts of this site</a></h2>
+    
     </div>

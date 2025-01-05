@@ -1,7 +1,4 @@
 
-function onload() {
-    document.getElementById("loadicon").style.display="none";
-  }
 
 function initloading() {
     document.getElementById("loadicon").style.display="block";
