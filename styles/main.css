@@ -90,9 +90,6 @@ a:hover {
     color:#12a3d3;
     cursor: url("/images/wiicursorremake_hover.png"), pointer;
 }
-button:hover {
-    cursor: url("/images/wiicursorremake_hover.png"), pointer;
-}
 hr {
     border: 1px solid #838383;
 }
@@ -124,31 +121,40 @@ hr {
 
 /* other styles */
 button {
-background-color:white;
-color:black;
-font-size:18px;
-text-align:center;
-padding:3px;
-border-radius:2px;
-outline:2px solid #34BEED;
-border:none;
-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.226);
-transition: 0s;
-}
-
-button:hover {
-    background-color:white;
-    color:black;
-    font-size:18px;
-    text-align:center;
-    padding:3px;
-    border-radius:2px;
-    outline:3px solid #21b4e6;
+    cursor: url("/images/wiicursorremake.png"), default;
+    background-color:#f6fdff;
+    outline:.1em solid #34beed;
     border:none;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.274);
-    transition: 0s;
+    border-radius:6px;
+    padding:3px;
+    text-align:Center;
+    filter: drop-shadow(1px 1px 3.4px #c5c5c5);
+    box-shadow:inset 1px 1px 13px #74747427;
+	font-size: 18px;
+	color: #323232;
+	font-weight: normal;
+    overflow:hidden;
+    width:auto;
+    z-index:1;
+ }
+button:hover {
+    cursor: url("/images/wiicursorremake_hover.png"), pointer;
+    background-color:#f6fdff;
+    outline:.2em solid #21bdf1; 
+    border:none;
+    border-radius:6px;
+    padding:3px;
+    text-align:Center;
+    filter: drop-shadow(1px 1px 3.4px #c5c5c5);
+    box-shadow:inset 1px 1px 13px #74747427;
+	font-size: 18px;
+	color: #323232;
+	font-weight: normal;
+    overflow:hidden;
+    width:auto;
+    z-index:1;
     }
 
   
- 
-  
+
+    
