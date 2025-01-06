@@ -24,7 +24,7 @@ function hovr() {
 function backtohome() {
     var hoverfore = new Audio("/sound/globe/backsound.wav");
     hoverfore.play();
-    setTimeout(redirect,400);
+    setTimeout(redirect,420);
     document.getElementById("details").style.opacity="0%";
 }
 function redirect() {
