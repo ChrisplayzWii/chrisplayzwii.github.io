@@ -23,6 +23,7 @@ function globetransform() {
     document.getElementById("mainpg").style.backgroundColor="black";
     document.getElementById("mainpg").style.Color="white";
     document.getElementById("info").style.display="none";
+    document.getElementById("mainpg").style.overflow="hidden";
     document.getElementById("globetrans").style.display="block";
     setTimeout(globeopen,900);
 }
