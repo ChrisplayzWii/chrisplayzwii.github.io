@@ -80,7 +80,14 @@
            height:60px;
            background-color:#26b8e8;
         }
-        #topbtns {
+        .active {
+           background-image:url("/images/globe/border_press.png"); 
+           transition:.1s ease-in-out;
+           opacity:70%;
+           height:60px;
+           background-color:#26b8e8;
+        }
+        .topbtns {
             width:30%;
             padding:0px;
         }
@@ -89,6 +96,21 @@
         }
         #NASAANDWNWATERMARK {
             position:absolute; left:8%; bottom:120px; width:230; height:auto; z-index:2;
+        }
+        #controlsmenu {
+            position:absolute; left:0%; top:0; z-index:10; 
+            background-repeat:no-repeat;
+            background-position:center;
+            width:100%; height:100%;
+            background-color:#1010374b;
+            transition:.3s ease-in-out;
+            color:white;
+            font-size:19px;
+            text-align:center;
+             display: flex;
+             align-items: center; 
+             justify-content: center; 
+             list-style-type: none;
         }
 
 
@@ -101,22 +123,36 @@
 
 
     <div id="details" style="max-width:100%; height:100%; width:100%; position:absolute; top:0; left:0;">
+        <div id="controlsmenu" style="visibility:hidden; opacity:0%;" onclick="hidecontrols();">
+            <img src="/images/globe/controlsbanner.png" style=" width:630px; height:230px;">
+            <h3 style="position:fixed; margin-top:-180px; font-size:23px;">Controls:</h3>
+            <li style="position:fixed;  margin-top:-90px; font-size:23px;">up arrow to zoom in</li>
+            <li style="position:fixed; margin-top:-30px; font-size:23px;">down arrow to zoom out</li>
+            <li style="position:fixed; margin-top:30px; font-size:23px;">left arrow to warp left </li>
+            <li style="position:fixed; margin-top:85px; font-size:23px;">right arrow to warp right </li>
+            <li style="position:fixed; margin-top:146px; font-size:23px;">enter key to restore globe </li>
+        </div>
+
+<div id="mainglobe" style="z-index:6px; position:absolute; top:0; left:0; width:100%; height:100%;">
                 <img src="/images/globe/globee.PNG" onclick="" onmouseup="globesound();" id="globe" alt="">
                 <img src="/images/globe/weathernewswatermark.png" id="NASAANDWNWATERMARK" alt="">
         
         
                 
-                    <button align="center" id="topbtns" onclick="zoomOut();" onmouseover="hovr();">Zoom (o)</button>
-                    <button align="center" id="topbtns" onclick="changetemp();" onmouseover="hovr();">Next</button>
-                    <button align="center" id="topbtns" onclick="zoomIn();" onmouseover="hovr();">Zoom (i)</button>
+                    <button align="center" id="zoomoutbtn" class="topbtns" onclick="zoomOut();" onmouseover="hovr();">Zoom (&darr;)</button>
+                    <button align="center" id="changebtn" class="topbtns" onclick="changetemp();" onmouseover="hovr();">Next</button>
+                    <button align="center" id="zoominbtn" class="topbtns" onclick="zoomIn();" onmouseover="hovr();">Zoom (&uarr;)</button>
                 
                
 
                     <div id="bottombtns" style=" width:100%; height:fit-content; position:absolute; bottom:30px;    ">
-                    <button align="center" onclick="backtohome(); " onmouseover="hovr();">End</button>
-                    <button align="center" onclick="warp();" onmouseover="hovr();"><img src="/images/globe/warp01.png" style="max-width:45px;" alt=""></button>
-                    <button align="center" onclick="warpback();" onmouseover="hovr();"><img src="/images/globe/warp02.png" style="max-width:38px;" alt=""></button>
-                    <button align="center" onclick="restore();" onmouseover="hovr();">Restore</button>
+                    <button align="center" id="endglobeviewbtn" onclick="backtohome(); " onmouseover="hovr();">End</button>
+                    <button align="center" id="warp1btn"        onclick="warp();" onmouseover="hovr();"><img src="/images/globe/warp01.png" style="max-width:45px;" alt=""></button>
+                    <button align="center" id="warpbackbtn"     onclick="warpback();" onmouseover="hovr();"><img src="/images/globe/warp02.png" style="max-width:38px;" alt=""></button>
+                    <button align="center" id="restorebtn"      onclick="restore();" onmouseover="hovr();">Restore</button>
                     </div>
                 
+                </div>
+
+
                 </div>
