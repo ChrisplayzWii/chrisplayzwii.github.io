@@ -18,9 +18,9 @@
     <style>
         * {
             transition:0s;
+            cursor: url("/images/wiicursorremake.png"), default;
         }
         body {
-            cursor: url("/images/wiicursorremake.png"), default;
             background-color:black;
             color:white;
             width:100%;
@@ -96,8 +96,8 @@
 <img src="/images/globe/weathernewswatermark.png" style="position:absolute; left:8%; bottom:50px; width:230; height:auto;" alt="">
         <img src="/images/globe/globee.PNG"  onclick="" onmouseup="globesound();" style="width:577px; height:45%; border-radius:950px; display:block;max-width:60%; margin:auto; position:absolute; left:20%; right:20%; bottom:50%; top:50%;" id="globe" alt="">
         <br><br>
-        <center>
-            <button onclick="backtohome();" onmouseover="hovr();">Go back</button>
+
+            <button align="center" onclick="backtohome();" onmouseover="hovr();">Go back</button>
             <script>
                 function hovr() {
                     var hoverfore = new Audio("/sound/hoverfore.wav");
@@ -139,5 +139,5 @@ document.addEventListener('keydown', (event) => {
 
 
             </script>
-        </center>
+
     </div>
