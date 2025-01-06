@@ -5,7 +5,7 @@
     scroll-behavior:smooth;
 }
 body {
-    background: url("/images/bkg.jpg") top center repeat-x #000444;
+    background: url("images/bkg.jpg") top center repeat-x #000444;
     height:fit-content;
     width:100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,7 +33,7 @@ a {
     margin:auto;
 }
 #bnrnav {
-    background: url("/images/topNav_blue.png");
+    background: url("images/topNav_blue.png");
 background-position: 0 0;
 max-width:898px;
 }
@@ -54,7 +54,7 @@ max-width:898px;
      animation-timing-function: ease-in-out;
 }
 #navuil li:hover {
-background: url("/images/topNav_blue.png");
+background: url("images/topNav_blue.png");
 background-position: 0px -30px; 
 background-repeat:no-repeat;
 }
