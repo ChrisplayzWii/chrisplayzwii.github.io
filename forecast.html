@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en" id="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globe - ChrisplayzBLOX/YT'S weblinks</title>
+    <link rel="shortcut icon" href="/chris.png" type="image/x-icon">
+    <meta name="description" content="ChrisplayzYT/BLOX's website. links, information and more!">
+    <meta name="keywords" content="ChrisplayzYT/BLOX's website, ChrisplayzBLOX, ChrisplayzYT, ChrisplayzBLOX/YT">
+    <meta name="author" content="ChrisplayzYT/BLOX">
+
+    <audio src="/sound/Wii Shop Channel - Loading Sound HD.mp3" id="loadingsound" loop="" preload></audio>
+    <link rel="stylesheet" href="/styles/globe.css">
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/wiishopscrollbar/wiiscrollbar.css">
+    <audio src="/bgm/Globe Forecast (Night) Forecast Channel.mp3" autoplay="" loop="" ></audio>
+    <style>
+        * {
+            transition:0s;
+        }
+        body {
+            cursor: url("/images/wiicursorremake.png"), default;
+            background-color:black;
+            color:white;
+            width:100%;
+            height:100%;
+        }
+        #details {
+            background-image:url("/images/globe/stars.png");
+            background-size:auto;
+        }
+        #globe:active {
+            cursor: url("/images/wiicursorremake_grab.png"), auto;
+        }
+        #globe {
+            user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    transition:.3s ease-in-out;
+        }
+
+        button {
+           background-image:url("/images/globe/border.PNG");
+           background-size:cover;
+         width:200px;
+        height:68px;
+        padding:3px;
+        border-radius:3px;
+        border:none;
+        font-size:23px;
+        padding:3px;
+        color:#323232;
+        font-weight:bold;
+        opacity:30%;
+        transition:.3s ease-in-out;
+        }
+        button:hover {
+           background-image:url("/images/globe/border_active.png");
+           background-size:cover;
+         width:200px;
+        height:68px;
+        padding:3px;
+        color:#323232c0;
+        border-radius:3px;
+        border:none;
+        opacity:50%;
+        transition:.3s ease-in-out;
+        }
+        button:active {
+           background-image:url("/images/globe/border_press.png");
+           background-size:cover;
+         width:200px;
+        height:67px;
+        margin-top:2px;
+        padding:0px;
+        border-radius:5px;
+        color:#323232ab;
+        border:none;
+        opacity:70%;
+        transition:.3s ease-in-out;
+        }
+
+
+    </style>
+</head>
+
+<body  id="mainpg" onload="stoploading();">
+
+
+    <div id="details"   style=" max-width:100%; height:100%; width:100%; position:absolute; top:0; left:0;" >
+        <p>press i to zoom in, and o to zoom out ;)</p>
+<img src="/images/globe/weathernewswatermark.png" style="position:absolute; left:8%; bottom:50px; width:230; height:auto;" alt="">
+        <img src="/images/globe/globee.PNG"  onclick="" onmouseup="globesound();" style="width:577px; height:45%; border-radius:950px; display:block;max-width:60%; margin:auto; position:absolute; left:20%; right:20%; bottom:50%; top:50%;" id="globe" alt="">
+        <br><br>
+        <center>
+            <button onclick="backtohome();" onmouseover="hovr();">Go back</button>
+            <script>
+                function hovr() {
+                    var hoverfore = new Audio("/sound/hoverfore.wav");
+                    hoverfore.play();
+                }
+                function backtohome() {
+                    var hoverfore = new Audio("/sound/backsound.wav");
+                    hoverfore.play();
+                    setTimeout(redirect,400);
+                }
+                function redirect() {
+                 window.location.href="index.html";
+                }
+
+                document.addEventListener('keydown', (event) => {
+  if (event.key === 'i') {
+    var zooms = new Audio("/sound/zoom.wav")
+    zooms.play();
+    document.getElementById("globe").src="/images/globe/zoomedinglobee.PNG";
+    document.getElementById("globe").style.width="579px";
+    document.getElementById("globe").style.height="40%";
+    document.getElementById("globe").style.transform="scale(1.7)";
+    document.getElementById("globe").onClick="javascript:zoomout();";
+    
+  }
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'o') {
+    var zooms2 = new Audio("/sound/zoomout.wav")
+    zooms2.play();
+    document.getElementById("globe").src="/images/globe/globee.PNG";
+    document.getElementById("globe").style.width="577px";
+    document.getElementById("globe").style.height="45%";
+    document.getElementById("globe").style.transform="scale(1)";
+    document.getElementById("globe").onClick="javascript:showtokyo();";
+
+  }
+});
+
+
+            </script>
+        </center>
+    </div>

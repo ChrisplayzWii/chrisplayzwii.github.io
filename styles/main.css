@@ -6,13 +6,8 @@
     font-weight:normal;
     cursor: url("/images/wiicursorremake.png"), default;
     scroll-behavior: smooth;
-    
 }
-.page {
-    background-color:#FFFF;
-    color:#323232;
-    transition:.2s ease-in-out;
-}
+
 body {
     margin-top:8px;
     overflow-x: hidden; 
@@ -21,6 +16,10 @@ body {
     animation: godown .5s;
     opacity:100%;
 
+}
+#mainpg {
+    background-color:white;
+    color:#323232;
 }
 #borderleft {
     position:absolute; top:0px; left:1.3%; z-index:-3px; width:13px; height:100%;
@@ -104,6 +103,7 @@ hr {
     width:90%;
     max-width:900px;
     background-color:inherit;
+    color:inherit;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.123);
     border-left:1px solid #34beed;
     border-top:1px solid #34beed;

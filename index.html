@@ -17,7 +17,27 @@
     <audio src="/sound/wiishopsounds/12.wav" autoplay="" ></audio>
 </head>
 
-<body onload="stoploading();">
+<body id="mainpg" onload="stoploading();">
+<div id="globetrans">
+</div>
+<style>
+    body {
+        overflow:hidden;
+    }
+    #globetrans {
+        background-image:url("/images/globe/GLOBE-TXT.png");
+        background-repeat:no-repeat;
+        background-position-y:48%;
+        background-position-x:center;
+        background-color:black; position:absolute; width:100%; height:100%;
+        display:none;
+        
+    }
+</style>
+
+<div id="info">
+
+
     <img src="/images/background/bluelinebordr.png" id="borderleft" alt="">
     <img src="/images/background/bluelinebordr.png" id="borderright" alt="">
 
@@ -28,8 +48,10 @@
 
     <div id="details" style="text-align:center; overflow:hidden; max-width:900px; " >
 <img src="/images/chrisplayzpfp.svg" style="border-radius:6px; width:80px; height:80px;" alt="">
+<div id="txttop">
         <h1 style="font-weight:bolder;">Welcome to ChrisplayzBLOX/YT's Website!</h1>
         <h3>here are some things you should check out:</h3>
+    </div>
 
   <div id="stuff" style=" margin:0;; text-align:left;">
 
@@ -56,21 +78,23 @@
     
             </div>
 
-            <div id="box"  style="padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
-                <img src="/images/161468698.png" style=" border-radius:15px;  position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+            <div id="box" style="padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+                <img src="/images/REVIIVESHOPBAG.png" style="  border-radius:15px;  position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
     
-         <a href="https://github.com/Reviive-Shop-Channel"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
-                Check out the archive of Reviive Shop's Github</a>
+         <a href="#"   onclick="globetransform();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+                My favorite song from the Wii: Forecast Channel Globe at Night</a>
+            </div>
+
+            <div id="box" style="padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+                <img src="/images/REVIIVESHOPBAG.png" style="  border-radius:15px;  position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+    
+         <a href="https://www.youtube.com/watch?v=xSYA7sqsEIA&t=0s" target="_blank"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+                My favorite song from Mario Wonder: Wonder Flower (Going Up) </a>
     
             </div>
 
-            <div id="box" style=" padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
-                <img src="/images/gmail.png" style=" border-radius:15px; position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
-    
-         <a href="mailto:chrisplayzcontactme@gmail.com"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
-                Send me an email at chrisplayzcontactme@gmail.com</a>
-    
-            </div>
+
+
 
   </div>
 
@@ -78,3 +102,9 @@
   <h2><a href="credits.html">Credits for parts of this site</a></h2>
     
     </div>
+
+
+
+</div>
+</body>
+

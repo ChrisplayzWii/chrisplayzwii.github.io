@@ -28,8 +28,11 @@
         max-width:550px;
         margin:auto;
     }
+    button {
+        background-image:url("/images/68879.png");
+    }
 </style>
-<body  onload="stoploading();" style="background-color:black; color:white; overflow-y:scroll;" >
+<body  id="mainpg" onload="stoploading();" style="background-color:black; color:white; overflow-y:scroll;" >
 
     <div id="loadicon" style="display:none;" >
         <img src="/images/ring.png" style="display:flex; margin-top:2px; width:90px; height:90px;" id="wiiring" alt="">
@@ -44,19 +47,23 @@
         <h2 style="font-weight:bold; margin-top:30px; margin-bottom:30px;">
             <a href="#">You</a> for visiting my website :D</h2>
 
+            
             <h2 style="font-weight:bold; margin-top:30px; margin-bottom:30px;">
-                <a href="https://stackoverflow.com/a/52361343" target="_blank">Darth Veyda on stackoverflow</a> for info on how to create custom arrow buttons for scrollbar.</h2>
+                <a href="https://www.spriters-resource.com/wii/forecastchannel/" onclick="initloading();" onmouseover="wiihover();" target="_blank">larsenv on Spriters resource</a> for the forcast channel buttons</h2>
+
+            <h2 style="font-weight:bold; margin-top:30px; margin-bottom:30px;">
+                <a href="https://stackoverflow.com/a/52361343" onclick="initloading();" onmouseover="wiihover();" target="_blank">Darth Veyda on stackoverflow</a> for info on how to create custom arrow buttons for scrollbar.</h2>
 
                 <h2 style="font-weight:bold; margin-top:30px; margin-bottom:30px;">
-                    <a href="https://idkwh.ct8.pl/" target="_blank">idkwhereisthisname</a> for the Wii Shop scrollbar idea</h2>
+                    <a href="https://idkwh.ct8.pl/" onclick="initloading();" onmouseover="wiihover();" target="_blank">idkwhereisthisname</a> for the Wii Shop scrollbar idea</h2>
             
 
                 <h2 style="font-weight:bold; margin-top:30px; margin-bottom:30px;">
-                    <a href="https://www.youtube.com/@NathanBoehm" target="_blank">Nathan Boehem</a> for the Wii Shop scrollbar arrows from 
-                    <a href="https://wiishopchannel.net"  target="_blank">https://wiishopchannel.net</a>.</h2>
+                    <a href="https://www.youtube.com/@NathanBoehm" onclick="initloading();" onmouseover="wiihover();" target="_blank">Nathan Boehem</a> for the Wii Shop scrollbar arrows from 
+                    <a href="https://wiishopchannel.net" onclick="initloading();" onmouseover="wiihover();"  target="_blank">https://wiishopchannel.net</a>.</h2>
             
 
-
+                    
                     
     </marquee>
 

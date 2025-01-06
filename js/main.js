@@ -16,3 +16,20 @@ function wiihover() {
     var hoverwii = new Audio("/sound/wiishopsounds/2.wav");
     hoverwii.play();
 }
+
+function globetransform() {
+    var glb = new Audio("/sound/globeopen.wav");
+    glb.play();
+    document.getElementById("mainpg").style.backgroundColor="black";
+    document.getElementById("mainpg").style.Color="white";
+    document.getElementById("info").style.display="none";
+    document.getElementById("globetrans").style.display="block";
+    setTimeout(globeopen,900);
+}
+function globeopen() {
+    window.location.href="forecast.html";
+}
+function globesound() {
+    var globegrab = new Audio("/sound/forecast_grab_globe.wav");
+    globegrab.play();
+}
