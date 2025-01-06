@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
     font-weight:normal;
     cursor: url("/images/wiicursorremake.png"), default;
     scroll-behavior: smooth;
+    font-family: 'Wii NTLG PGothic JPN Regular';
 }
+@font-face {
+    font-family: 'Wii NTLG PGothic JPN Regular';
+    src: url(/font/font2.ttf);
+  }
 
 body {
     margin-top:8px;
