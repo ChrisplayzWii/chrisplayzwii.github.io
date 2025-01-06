@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
-<html lang="en" id="page">
+<html lang="en">
 <head>
-    <audio src="/sound/globe/error.wav" autoplay="" ></audio>
+    <audio src="/bgm/globe/Globe Forecast (Night) Forecast Channel.mp3" autoplay="" ></audio>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Globe - ChrisplayzBLOX/YT'S weblinks</title>
@@ -51,44 +51,44 @@
 
         button {
            background-image:url("/images/globe/border.PNG");
-           background-size:cover;
-         width:250px;
-        height:68px;
+           background-size:contain;
+           background-repeat:repeat-x;
+         width:20%;
+        height:60px;
         padding:3px;
         border-radius:3px;
         border:none;
         font-size:23px;
-        padding:3px;
+    background-color:transparent;
         color:#323232;
         font-weight:bold;
         opacity:30%;
-        transition:.3s ease-in-out;
+        transition:.1s ease-in-out;
         display:inline-block;
+        background-color:#e8e8e8;
         }
         button:hover {
            background-image:url("/images/globe/border_active.png");
-           background-size:cover;
-         width:250px;
-        height:68px;
-        padding:3px;
-        color:#323232c0;
-        border-radius:3px;
-        border:none;
+           transition:.1s ease-in-out;
         opacity:50%;
-        transition:.3s ease-in-out;
+        background-color:#26b8e8;
         }
         button:active {
-           background-image:url("/images/globe/border_press.png");
-           background-size:cover;
-         width:250px;
-        height:67px;
-        margin-top:2px;
-        padding:0px;
-        border-radius:5px;
-        color:#323232ab;
-        border:none;
-        opacity:70%;
-        transition:.3s ease-in-out;
+           background-image:url("/images/globe/border_press.png"); 
+           transition:.1s ease-in-out;
+           opacity:70%;
+           height:60px;
+           background-color:#26b8e8;
+        }
+        #topbtns {
+            width:30%;
+            padding:0px;
+        }
+        #globe {
+            width:577px; height:45%; border-radius:950px; display:block;max-width:60%; margin:auto; position:absolute; left:20%; right:20%; bottom:50%; top:50%; z-index:1;
+        }
+        #NASAANDWNWATERMARK {
+            position:absolute; left:8%; bottom:120px; width:230; height:auto; z-index:2;
         }
 
 
@@ -99,20 +99,16 @@
 
 <body  id="mainpg" onload="stoploading();">
 
-    <div id="warning" onclick="removewarning();" style="display:none; z-index:5px; opacity:100%;  transition:.3s ease-in-out; display:block; position:absolute; top:0; left:0; width:100%; height:100%; display:block; ">
 
-        <p style="color:red; font-weight:bold; font-size:20px; text-align:center; margin-top:48%;">WARNING: this part of the website isn't 100% made for mobile, some glitches/bugs can occur. <br><br>Click to continue.</p>
-    </div>
-
-    <div id="details" style="display:none; opacity:0%; max-width:100%; height:100%; width:100%; position:absolute; top:0; left:0;">
-        <img src="/images/globe/weathernewswatermark.png" style="position:absolute; left:8%; bottom:120px; width:230; height:auto;" alt="">
-                <img src="/images/globe/globee.PNG" onclick="" onmouseup="globesound();" style="width:577px; height:45%; border-radius:950px; display:block;max-width:60%; margin:auto; position:absolute; left:20%; right:20%; bottom:50%; top:50%;" id="globe" alt="">
+    <div id="details" style="max-width:100%; height:100%; width:100%; position:absolute; top:0; left:0;">
+                <img src="/images/globe/globee.PNG" onclick="" onmouseup="globesound();" id="globe" alt="">
+                <img src="/images/globe/weathernewswatermark.png" id="NASAANDWNWATERMARK" alt="">
         
         
                 
-                    <button align="center" style="width: 300px;" onclick="zoomOut();" onmouseover="hovr();">Zoom (o)</button>
-                    <button align="center" style="width: 300px;" onclick="changetemp();" onmouseover="hovr();">Next</button>
-                    <button align="center" style="width: 300px;" onclick="zoomIn();" onmouseover="hovr();">Zoom (i)</button>
+                    <button align="center" id="topbtns" onclick="zoomOut();" onmouseover="hovr();">Zoom (o)</button>
+                    <button align="center" id="topbtns" onclick="changetemp();" onmouseover="hovr();">Next</button>
+                    <button align="center" id="topbtns" onclick="zoomIn();" onmouseover="hovr();">Zoom (i)</button>
                 
                
 

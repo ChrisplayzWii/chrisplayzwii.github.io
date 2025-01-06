@@ -1,21 +1,3 @@
-function removewarning() {
-    document.getElementById("warning").style.opacity="0%";
-    document.getElementById("details").style.opacity="100%";
-    setTimeout(faaaaad,400);
-}
-function faaaaad() {
-    var globeBGM = new Audio("/bgm/globe/Globe Forecast (Night) Forecast Channel.mp3");
-    globeBGM.play();
-    document.getElementById("warning").style.display="none";
-    document.getElementById("details").style.display="block";
-    document.getElementById("warning").style.opacity="0%";
-    document.getElementById("details").style.opacity="0%";
-    setTimeout(faaaaad2,1);
-}
-function faaaaad2() {
-    document.getElementById("warning").style.opacity="0%";
-    document.getElementById("details").style.opacity="100%";
-}
 
 function hovr() {
     var hoverfore = new Audio("/sound/globe/hoverfore.wav");
