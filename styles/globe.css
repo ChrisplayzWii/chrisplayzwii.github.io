@@ -80,6 +80,7 @@
           background-color:#e8e8e8;
           }
           button:hover {
+            cursor: url("/images/wiicursorremake_hover.png"), pointer;
              background-image:url("/images/globe/border_active.png");
              transition:.1s ease-in-out;
           opacity:58%;
@@ -87,6 +88,7 @@
           color:white;
           }
           button:active {
+            cursor: url("/images/wiicursorremake_hover.png"), pointer;
              background-image:url("/images/globe/border_press.png"); 
              transition:.1s ease-in-out;
              opacity:74%;
