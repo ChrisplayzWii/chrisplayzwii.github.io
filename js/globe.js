@@ -116,17 +116,6 @@ warpback();
     }
     });
 
-// Restore
-document.addEventListener('keydown', (event) => {
-    if (event.code === 'Enter') { 
-        restore();
-
-        var restoreglobee = document.getElementById("restorebtn");
-        restoreglobee.classList.add("active");
-        setTimeout(revertrestore, 100);
-    }
-});
-
 // Controls
 document.addEventListener('keydown', (event) => {
     if (event.code === 'Space') { 
