@@ -18,7 +18,7 @@ function wiihover() {
 }
 
 function globetransform() {
-    var glb = new Audio("/sound/globeopen.wav");
+    var glb = new Audio("/sound/globe/globeopen.wav");
     glb.play();
     document.getElementById("mainpg").style.backgroundColor="black";
     document.getElementById("mainpg").style.Color="white";
@@ -30,6 +30,6 @@ function globeopen() {
     window.location.href="forecast.html";
 }
 function globesound() {
-    var globegrab = new Audio("/sound/forecast_grab_globe.wav");
+    var globegrab = new Audio("/sound/globe/forecast_grab_globe.wav");
     globegrab.play();
 }
