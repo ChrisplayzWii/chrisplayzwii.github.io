@@ -29,25 +29,37 @@
             margin:auto;
             width:90%;
             max-width:900px;
-            background-color:inherit;
+            background-color:black;
+            color:white;
+            background-image:url("/images/globe/stars.png");
+            background-size:auto;
+            transition:.3s ease-in-out;
+            overflow:hidden;
             color:inherit;
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.123);
             border-radius:3px;
-            color:inherit;
             padding:10px; 
             text-align: center;
             z-index:5;
         }
         
             
-          #details {
-              background-color:black;
-              color:white;
-              background-image:url("/images/globe/stars.png");
-              background-size:auto;
-              transition:.3s ease-in-out;
-              overflow:hidden;
-          }
+
+
+          a {
+            color:#10799c;
+            cursor: url("/images/wiicursorremake_hover.png"), pointer;
+        }
+        a:hover {
+            color:#12a3d3;
+            cursor: url("/images/wiicursorremake_hover.png"), pointer;
+        }
+
+        #currentweathericon {
+            position:absolute;   right:5%;  width:230; height:auto; z-index:2; top:5%; 
+            filter: drop-shadow(1px 1px 3.4px #067b12a9);
+        }
+
           #globe:active {
               cursor: url("/images/wiicursorremake_grab.png"), auto;
           }
@@ -58,8 +70,56 @@
       -moz-user-select: none;
       -webkit-user-select: none;
       -ms-user-select: none;
-      transition:.3s ease-in-out;
+      transition:.6s ease-in-out;
+      background-image:url("/images/globe/globee.PNG");
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:100%;
+      border-radius:310px;
+      width:577px; height:541px;
+      min-height:541px; max-height:541px;  display:block; 
+      max-width:60%; 
+      margin:auto;
+       position:absolute; left:20%; right:20%; bottom:50%; top:50%; 
+       z-index:1px;
           }
+
+
+
+          #globe:active {
+            cursor: url("/images/wiicursorremake_grab.png"), auto;
+        }
+
+          .topbtns {
+            width:30%;
+            padding:0px;
+            z-index:30px;
+        }
+        #bottombtns {
+             width:100%; height:fit-content; position:absolute; bottom:30px;              z-index:30px;  
+        }
+
+        #NASAANDWNWATERMARK {
+            position:absolute; left:8%; bottom:120px; width:230; height:auto; z-index:2;
+        }
+        #controlsmenu {
+            position:absolute; left:0%; top:0; z-index:10; 
+            background-repeat:no-repeat;
+            background-position:center;
+            width:100%; height:100%;
+            background-color:#1010374b;
+            transition:.3s ease-in-out;
+            color:white;
+            font-size:19px;
+            text-align:center;
+             display: flex;
+             align-items: center; 
+             justify-content: center; 
+             list-style-type: none;
+
+        }
+
+
   
           button {
              background-image:url("/images/globe/border.PNG");
@@ -78,6 +138,7 @@
           transition:.1s ease-in-out;
           display:inline-block;
           background-color:#e8e8e8;
+          box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.473);
           }
           button:hover {
             cursor: url("/images/wiicursorremake_hover.png"), pointer;
@@ -86,6 +147,7 @@
           opacity:58%;
           background-color:#26b8e8;
           color:white;
+          box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.623);
           }
           button:active {
             cursor: url("/images/wiicursorremake_hover.png"), pointer;
@@ -94,6 +156,7 @@
              opacity:74%;
              height:60px;
              background-color:#26b8e8;
+             box-shadow: 3px 3px 5px rgba(197, 197, 197, 0.822);
              color:white;
           }
           .active {
@@ -104,31 +167,3 @@
              background-color:#26b8e8;
              color:white;
           }
-          .topbtns {
-              width:30%;
-              padding:0px;
-          }
-          #globe {
-              width:577px; height:45%; border-radius:950px; display:block;max-width:60%; margin:auto; position:absolute; left:20%; right:20%; bottom:50%; top:50%; z-index:1;
-          }
-          #NASAANDWNWATERMARK {
-              position:absolute; left:8%; bottom:120px; width:230; height:auto; z-index:2;
-          }
-          #controlsmenu {
-              position:absolute; left:0%; top:0; z-index:10; 
-              background-repeat:no-repeat;
-              background-position:center;
-              width:100%; height:100%;
-              background-color:#1010374b;
-              transition:.3s ease-in-out;
-              color:white;
-              font-size:19px;
-              text-align:center;
-               display: flex;
-               align-items: center; 
-               justify-content: center; 
-               list-style-type: none;
-          }
-  
-
-          
