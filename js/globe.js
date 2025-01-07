@@ -21,31 +21,50 @@ document.getElementById("globe").src="/images/globe/globee.PNG";
 document.getElementById("globe").style.width="577px";
 document.getElementById("globe").style.height="45%";
 document.getElementById("globe").style.transform="scale(1)";
-document.getElementById("globe").onClick="javascript:showtokyo();";
+document.getElementById("tokyoselector").style.display="none";
 }
 
 function zoomIn() {
     var zooms12 = new Audio("/sound/globe/zoom.wav")
     zooms12.play();
-    document.getElementById("globe").src="/images/globe/zoomedinglobee.PNG";
     document.getElementById("globe").style.width="579px";
     document.getElementById("globe").style.height="40%";
     document.getElementById("globe").style.transform="scale(1.7)";
-    
+    document.getElementById("tokyoselector").style.display="block";
 }
 
-function warp() {
-    var warpfir = new Audio("/sound/globe/changeperspective2.wav")
-warpfir.play();
-document.getElementById("globe").style.transform="skew(20deg)";
+let currentRotation = 0;
+
+function warp(rotation) {
+    var warpfir = new Audio("/sound/globe/changeperspective2.wav");
+    warpfir.play();
+    document.getElementById("globe").style.transform = `rotate3d(1, 2, 3, ${rotation}deg)`;
 }
 
-function warpback() {
-    var warpfir = new Audio("/sound/globe/changeperspective.wav")
-warpfir.play();
-document.getElementById("globe").style.transform="skew(-20deg)";
+function warpback(rotation) {
+    var warpfir = new Audio("/sound/globe/changeperspective.wav");
+    warpfir.play();
+    document.getElementById("globe").style.transform = `rotate3d(1, 2, 3, ${rotation}deg)`;
 }
 
+function warpforbtn() {
+    currentRotation += 150; 
+    warp(currentRotation);
+
+    var warrrp = document.getElementById("warp1btn");
+    warrrp.classList.add("active");
+    setTimeout(() => warrrp.classList.remove("active"), 100);
+}
+
+function warpbtnback() {
+
+        currentRotation -= 150; 
+        warp(currentRotation);
+
+        var warrrpreverse = document.getElementById("warpbackbtn");
+        warrrpreverse.classList.add("active");
+        setTimeout(() => warrrpreverse.classList.remove("active"), 100);
+}
 
 function showcontrols() {
     var warpfir = new Audio("/sound/globe/WTR_SE_TENKI2.wav")
@@ -94,26 +113,26 @@ document.addEventListener('keydown', (event) => {
 // warp 1
 document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowLeft') {
-warp();
+        currentRotation += 150; 
+        warp(currentRotation);
 
-    var warrrp = document.getElementById("warp1btn");
-    warrrp.classList.add("active");
-    setTimeout(revertwarp1,100);
-    
+        var warrrp = document.getElementById("warp1btn");
+        warrrp.classList.add("active");
+        setTimeout(() => warrrp.classList.remove("active"), 100);
     }
-    });
+});
 
 
     // warp 2
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowRight') {
-warpback();
-
-    var warrrpreverse = document.getElementById("warpbackbtn");
-    warrrpreverse.classList.add("active");
-    setTimeout(revertwarp2,100);
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowRight') {
+            currentRotation -= 150; 
+            warp(currentRotation);
     
-    }
+            var warrrpreverse = document.getElementById("warpbackbtn");
+            warrrpreverse.classList.add("active");
+            setTimeout(() => warrrpreverse.classList.remove("active"), 100);
+        }
     });
 
 // Controls
@@ -151,6 +170,7 @@ document.addEventListener('keydown', (event) => {
 function restore() {
     var restores = new Audio("/sound/globe/restore.wav")
 restores.play();
+currentRotation = 0;
 document.getElementById("globe").src="/images/globe/globee.PNG";
 document.getElementById("globe").style.transform="revert";
 document.getElementById("globe").style.filter="revert";
