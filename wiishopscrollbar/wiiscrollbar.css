@@ -1,10 +1,13 @@
-    /* wii shop channel scrollbar remake by ChrisplayzBLOX/YT.
-    credit to https://stackoverflow.com/a/52361343 for the arrow buttons 
-    and https://wiishopchannel.net for the arrow icons.
+    
+    /*
+     wii shop channel scrollbar remake by ChrisplayzYT/BLOX.
+    credit to https://stackoverflow.com/a/52361343 for the arrow buttons tutorial
+    credit to https://idkwh.ct8.pl/ (idkwhereisthisname) for the scrollbar img rips. 
+    credit to https://nintendo.com  for the images i guessss.... 
      */
 
      ::-webkit-scrollbar {
-      width: 50px; 
+      width: 52px; 
     }
     
     ::-webkit-scrollbar-track {
@@ -12,63 +15,54 @@
     }
     
     ::-webkit-scrollbar-thumb {
-      border-left:1px solid #34BEED;
-      border-right:1px solid #34BEED;
-      background: rgb(198,238,255);
-      background: linear-gradient(0deg, rgba(198,238,255,1) 0%, rgba(226,248,255,1) 8%, rgba(224,245,255,1) 27%, rgba(233,246,252,1) 54%, rgba(232,246,249,1) 100%);
+      background-image:url("/wiishopscrollbar/scroll_bar.png");
+      background-size:cover;
     }
-
     
     
     /* Buttons */
     ::-webkit-scrollbar-button:single-button {
-    background-image: url("/wiishopscrollbar/arrows/arrowup.png");
+    background-image: url("/wiishopscrollbar/arrows/arrow_up.png");
     border:0px;
-    border-left:1px solid #34BEED;
+    border:none;
     display: block;
-    border-style: solid;
-    height: 52px;
+     height: 52px;
     width:52px;
     }
     
-    ::-webkit-scrollbar-button:single-button:hover {
-    display: block;
-    border-style: solid;
-    height: 52px;
-    width:52px;
-    }
     ::-webkit-scrollbar-button:single-button:active {
-      border:1.3px solid black;
-      background-image: url("/wiishopscrollbar/arrows/arrowup_active.png");
+      background-image: url("/wiishopscrollbar/arrows/arrow_up_pressed.png");
+      height: 52px;
+      width:52px;
+      background-size:cover;
       }
+
+
     
     /* Down */
     ::-webkit-scrollbar-button:single-button:vertical:increment {
-    background-image: url("/wiishopscrollbar/arrows/arrowdown.png");
+    background-image: url("/wiishopscrollbar/arrows/arrow_down.png");
     border:0px;
-    border-left:1px solid #34BEED;
+    border:none;
     display: block;
-    border-style: solid;
-    height: 52px;
-    width:52px;
-    }
-    
-    /* Down */
-    ::-webkit-scrollbar-button:single-button:vertical:increment:hover {
-    display: block;
-    border-style: solid;
+
     height: 52px;
     width:52px;
     }
     
     /* Down */
     ::-webkit-scrollbar-button:single-button:vertical:increment:active {
-      border:1.3px solid black;
-      background-image: url("/wiishopscrollbar/arrows/arrowdown_active.png");
+      background-image: url("/wiishopscrollbar/arrows/arrow_down_pressed.png");
+      background-size:cover;
+      height: 52px;
+      width:52px;
       }
     
     
-      /* wii shop channel scrollbar remake by ChrisplayzBLOX/YT.
-      credit to https://stackoverflow.com/a/52361343 for the arrow buttons 
-      and https://wiishopchannel.net for the arrow icons.
-       */
+    
+    /*
+     wii shop channel scrollbar remake by ChrisplayzYT/BLOX.
+    credit to https://stackoverflow.com/a/52361343 for the arrow buttons tutorial
+    credit to https://idkwh.ct8.pl/ (idkwhereisthisname) for the scrollbar img rips. 
+    credit to https://nintendo.com  for the images i guessss.... 
+     */
