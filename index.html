@@ -2,195 +2,104 @@
 <!DOCTYPE html>
 <html lang="en" id="page">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChrisplayzBLOX/YT'S weblinks</title>
+    <title>Home - ChrisplayzBLOX/YT & larsenv</title>
     <link rel="shortcut icon" href="/chris.png" type="image/x-icon">
     <meta name="description" content="ChrisplayzYT/BLOX's website. links, information and more!">
     <meta name="keywords" content="ChrisplayzYT/BLOX's website, ChrisplayzBLOX, ChrisplayzYT, ChrisplayzBLOX/YT">
     <meta name="author" content="ChrisplayzYT/BLOX">
 
-    <audio src="/bgm/Course World.mp3" autoplay="" ></audio>
+    <audio src="/sound/Wii Shop Channel - Loading Sound HD.mp3" id="loadingsound" loop="" preload></audio>
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/wiishopscrollbar/wiiscrollbar.css">
+    <audio src="/sound/wiishopsounds/11.wav" autoplay="" ></audio>
 </head>
 
 <body id="mainpg" onload="stoploading();">
-<img src="/images/background/star-spinning.gif" style="opacity:50%; max-width:50px; position:absolute; top:0; left:0;" alt="">
-<img src="/images/background/star-spinning.gif" style="opacity:50%; max-width:50px; position:absolute; top:0; right:0;" alt="">
-<img src="/images/background/star-spinning.gif" style="opacity:50%; max-width:50px; position:absolute; bottom:0; left:0;" alt="">
-<img src="/images/background/star-spinning.gif" style="opacity:50%; max-width:50px; position:absolute; bottom:0; right:0;" alt="">
-
-<div id="details" style="border:none;">
-<h1 align="center">Websites undergoing maintenance</h1>
-<h3 align="center">Come back soon!</h3>
+<div id="globetrans">
 </div>
-
-
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-weight:normal;
-    cursor: help;
-    scroll-behavior: smooth;
-    font-family: 'Wii NTLG PGothic JPN Regular';
-}
-@font-face {
-    font-family: 'Wii NTLG PGothic JPN Regular';
-    src: url(/font/font2.ttf);
-  }
-
-body {
-    margin-top:8px;
-    overflow-x: hidden; 
-    overflow-y:auto;
-    transition:.3s ease-in-out;
-    animation: godown .5s;
-    opacity:100%;
-
-}
-#mainpg {
-    background-color:black;
-    color:white;
-}
-#borderleft {
-    position:absolute; top:0px; left:1.3%; z-index:-3px; width:13px; height:100%;
-}
-#borderright {
-    position:absolute; top:0px; right:1.3%; z-index:-3px; width:13px; height:100%;
-}
-
-#loadicon {
-    width:90px;
-    height:90px;
-    position:fixed;
-    top:0%;
-    left:0%;
-    overflow:hidden;
-    z-index:7;
-}
-
-  
-#wiiring {
-    animation: spinner 1.3s infinite ;
-    transition:.3s ease-in-out;
-    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.11));
-}
-@keyframes spinner {
-    0% {transform: rotate(-150deg)}
-    100% {transform: rotate(150deg)};
-}
-
-
-/* mobile */
-
-@media only screen and (min-width:600px) {
-    #borderleft {
-        position:absolute; top:0px; left:1.3%; z-index:-3px; width:13px; height:100%;
+    #globetrans {
+        background-image:url("/images/globe/GLOBE-TXT.png");
+        background-repeat:no-repeat;
+        background-position-y:48%;
+        background-position-x:center;
+        background-color:black; position:absolute; width:100%; height:100%;
+        display:none;
+        
     }
-    #borderright {
-        position:absolute; top:0px; right:1.3%; z-index:-3px; width:13px; height:100%;
+    #details {
+        margin-top:10%;
     }
-    #loadicon {
-        left:2%;
-    }
-  }
-  
-  
-  /* computers */
-
-  @media only screen and (min-width: 1070px) {
-    #borderleft {
-        position:absolute; top:0px; left: 5.5em; z-index:-3px; width:13px; height:100%;
-    }
-    #loadicon {
-        left:0%;
-    }
-    #borderright {
-        position:absolute; top:0px; right: 5.5em; z-index:-3px; width:13px; height:100%;
-    }
-  }
-
-
-
-a {
-    color:#10799c;
-    cursor: url("/images/wiicursorremake_hover.png"), pointer;
-}
-a:hover {
-    color:#12a3d3;
-    cursor: url("/images/wiicursorremake_hover.png"), pointer;
-}
-hr {
-    border: 1px solid #838383;
-}
-
-
-
-@keyframes godown {
-    0% {margin-top:50px; opacity:0%;};
-}
-#details {
-    margin:auto;
-    width:90%;
-    max-width:900px;
-    background-color:inherit;
-    color:inherit;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.123);
-    border-radius:3px;
-    color:inherit;
-    padding:10px; 
-    text-align: center;
-    z-index:5;
-    position:relative; 
-    margin-top:10%;
-}
-
-
-
-/* other styles */
-button {
-    cursor: url("/images/wiicursorremake.png"), default;
-    background-color:#f6fdff;
-    outline:.1em solid #34beed;
-    border:none;
-    border-radius:6px;
-    padding:3px;
-    text-align:Center;
-    filter: drop-shadow(1px 1px 3.4px #c5c5c5);
-    box-shadow:inset 1px 1px 13px #74747427;
-	font-size: 18px;
-	color: #323232;
-	font-weight: normal;
-    overflow:hidden;
-    width:auto;
-    z-index:1;
-
- }
-button:hover {
-    cursor: url("/images/wiicursorremake_hover.png"), pointer;
-    background-color:#f6fdff;
-    outline:.2em solid #21bdf1; 
-    border:none;
-    border-radius:6px;
-    padding:3px;
-    text-align:Center;
-    filter: drop-shadow(1px 1px 3.4px #c5c5c5);
-    box-shadow:inset 1px 1px 13px #74747427;
-	font-size: 18px;
-	color: #323232;
-	font-weight: normal;
-    overflow:hidden;
-    width:auto;
-    z-index:1;
-    }
-
-  
-
 </style>
 
+<div id="info">
+
+
+    <img src="/images/background/bluelinebordr.png" id="borderleft" alt="">
+    <img src="/images/background/bluelinebordr.png" id="borderright" alt="">
+
+    <div id="loadicon" style="display:none;"  >
+        <img src="/images/ring.png" style="display:flex; margin-top:2px; width:90px; height:90px;" id="wiiring" alt="">
+        </div>
+        
+
+    <div id="details" style="text-align:center; overflow:hidden; max-width:900px; " >
+<img src="/images/icons/chrisplayzpfp.svg" style="border-radius:6px; width:80px; height:80px;" alt="">
+<div id="txttop">
+        <h1 style="font-weight:bolder;">Welcome to ChrisplayzBLOX/YT's Website!</h1>
+        <h3>here are some things you should check out:</h3>
+    </div>
+
+  <div id="stuff" style=" margin:0;; text-align:left;">
+
+    <div id="box" style=" padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+        <img src="/images/icons/Octicons-mark-github.svg" style="  border-radius:15px; position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+        <a href="https://github.com/ChrisplayzYT/"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+            Check out my Github for random projects i do!</a>
+    
+            </div>
+    
+            <div id="box"  style="padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+                <img src="/images/icons/wsc.png" style="  border-radius:15px;  position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+    
+         <a href="oldwsvids.html"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+            Check out my collection of old Wii Shop videos that is slowly growing!</a>
+    
+            </div>
+    
+            <div id="box" style="padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+                <img src="/images/icons/REVIIVESHOPBAG.png" style="  border-radius:15px;  position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+    
+         <a href="oldreviivevids.html"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+                Check out some old Reviive Shop Channel videos that i have reuploaded after the shutdown</a>
+    
+            </div>
+
+            <div id="box" style="padding-left:3px; border-bottom:1px solid grey; margin-top:5px; display:block;">
+                <img src="/images/icons/globethumb.png" style="  border-radius:15px;  position:relative; top:0px; display:inline-block; width:40px; height:40px; max-width:40px; max-height:40px;" alt="">
+    
+         <a href="/forecastchannel/index.html"  onclick="initloading();" onmouseover="wiihover();" style="position:relative; top:-12px; left:3px;">
+                My fav preinstalled wii channel (besides wiishop/mii): Forecast Channel! <small>(click for sum magik)</small></a>
+            </div>
 
 
 
+
+
+
+  </div>
+
+  <br><br><br>
+  <h2><a href="credits.html">Credits for parts of this site</a></h2>
+    
+    </div>
+
+
+
+</div>
 </body>
 
