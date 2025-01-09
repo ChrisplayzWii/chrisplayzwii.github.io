@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Globe - ChrisplayzBLOX/YT'S weblinks</title>
+        <link rel="shortcut icon" href="https://larsenv.xyz/favicon.ico" type="image/x-icon">
+          <!-- redirect to larsen's globe site that i helped with, so he can get sum traffic too :3 -->
+        <meta name="description" content="A Spinnable Wii Globe created by larsenv, SFX and styles added by ChrisplayzYT/BLOX.">
+        <meta name="keywords" content="ChrisplayzYT/BLOX's website, ChrisplayzBLOX, ChrisplayzYT, ChrisplayzBLOX/YT, Forecast Channel Recreation by ChrisplayzYT/BLOX, Spin the Globe larsenv, globe.larsenv.xyz">
+        <meta name="author" content="ChrisplayzYT/BLOX & larsenv">
+        <link rel="stylesheet" href="/forecastchannel/styles/mainglobe.css">
+        <script src="/forecastchannel/js/forecast.js"></script>
+        <audio src="/forecastchannel/sound/WTR_SE_TENKI2_RET.wav"  autoplay="" preload></audio>
+    <script>
+        function openlarsen() {
+    var hoverfore = new Audio("/forecastchannel/sound/WTR_SE_TENKI.wav");
+    hoverfore.play();
+    setTimeout(redirect,420);
+    document.getElementById("details").style.opacity="0%";
+}
+
+
+function redirect() {
+ window.location.href="https://globe.larsenv.xyz";
+}
+    </script>
+    </head>
+
+<body  id="mainpg" onload="showcontrols();">
+
+
+    <div id="details" style="max-width:100%; height:100%; width:100%; position:absolute; top:0px; left:0px;">
+
+
+
+         <!-- top btns -->
+         <button align="center" id="zoomoutbtn" class="topbtns" onclick="window.location.href='https://globe.larsenv.xyz'" onmouseover="hovr();">Zoom (&darr;)</button>
+         <button align="center" id="changebtn" class="topbtns" onclick="window.location.href='https://globe.larsenv.xyz'" onmouseover="hovr();">Next</button>
+         <button align="center" id="zoominbtn" class="topbtns" onclick="window.location.href='https://globe.larsenv.xyz'" onmouseover="hovr();">Zoom (&uarr;)</button>
+<!-- topbtns -->
+<img id="globe" style="opacity:10%;" onclick="backtohome(); " >
+<!-- bottom btns -->
+         <div id="bottombtns">
+         <button align="center" id="endglobeviewbtn"  onmouseover="hovr();">End</button>
+         <button align="center" id="warp1btn"        onclick="window.location.href='https://globe.larsenv.xyz'" onmouseover="hovr();"><img src="/forecastchannel//images/warp01.png" style="max-width:45px;" alt=""></button>
+         <button align="center" id="warpbackbtn"     onclick="window.location.href='https://globe.larsenv.xyz'" onmouseover="hovr();"><img src="/forecastchannel//images/warp02.png" style="max-width:38px;" alt=""></button>
+         <button align="center" id="restorebtn"      onclick="window.location.href='https://globe.larsenv.xyz'" onmouseover="hovr();">Restore</button>
+         </div>
+
+
+                <div id="controlsmenu" style="visibility:hidden; opacity:0%;"  >
+                    <img src="/forecastchannel//images/controlsbanner.png"  style=" width:630px; height:230px;">
+                    <h3 style="position:fixed; margin-top:-180px; font-size:23px;">NOTICE:</h3>
+                    <li style="position:fixed; margin-top:20px; font-size:17px;">This globe is outdated. <br> me and larsen combined this pages, sounds and css <br> with <a href="javascript:openlarsen();" onmouseover="hovr();" >https://globe.larsenv.xyz</a> to create a accurate 95% wii globe remake! <BR> (click link to see it)</li>
+                    </div>
+</div>
