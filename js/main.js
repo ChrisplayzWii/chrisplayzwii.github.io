@@ -1,4 +1,5 @@
-
+var globegrab = new Audio("/sound/globe/forecast_grab_globe.wav");
+var glb = new Audio("/sound/globe/globeopen.wav");
 
 function initloading() {
     document.getElementById("loadicon").style.display="block";
@@ -18,7 +19,6 @@ function wiihover() {
 }
 
 function globetransform() {
-    var glb = new Audio("/sound/globe/globeopen.wav");
     glb.play();
     document.getElementById("mainpg").style.backgroundColor="black";
     document.getElementById("mainpg").style.Color="white";
@@ -31,6 +31,15 @@ function globeopen() {
     window.location.href="forecast.html";
 }
 function globesound() {
-    var globegrab = new Audio("/sound/globe/forecast_grab_globe.wav");
     globegrab.play();
+}
+
+function earlybuttonhover() {
+    var hoverwii = new Audio("/sound/wiishopsounds/2.wav");
+    hoverwii.play();
+}
+
+function earlybuttonclik() {
+    var clik = new Audio("/sound/wiishopsounds/9.wav");
+    clik.play();
 }
