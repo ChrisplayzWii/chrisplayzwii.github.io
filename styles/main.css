@@ -13,12 +13,13 @@
   }
 ::selection {
   color: #323232;
-  background: skyblue;
+  background: #34BEED;
 }
 ::-moz-selection {
   color: #323232;
-  background: skyblue;
+  background:#34BEED;
 }
+
 body {
     margin-top:8px;
     overflow-x: hidden; 
@@ -95,10 +96,13 @@ body {
 a {
     color:#10799c;
     cursor: url("/images/wiicursorremake_hover.png"), pointer;
+    text-decoration:none;
 }
 a:hover {
     color:#12a3d3;
     cursor: url("/images/wiicursorremake_hover.png"), pointer;
+    
+    text-decoration:underline;
 }
 hr {
     border: 1px solid #838383;
@@ -169,3 +173,37 @@ button:hover {
   
 
     
+
+/* credit to idkwhereisthisname for the early web buttons idea ''https://idkwh.ct8.pl'' */
+
+#earlybuttonsonhomepage {
+    border:2px solid #95e5ff;
+    height:fit-content;
+    max-height:fit-content;
+    max-width:90%;
+    margin:auto;
+    overflow-y:auto;
+    overflow-x:hidden;
+    text-align:center;
+    font-size:18px;
+    padding:3px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+
+
+#earlywebbutton {
+    text-decoration:none;
+    color:transparent;
+    width:95px;
+    height:35px;
+    display:inline-block;
+    border:1px solid #34BEED;
+    border-radius:3px;    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
+}
+#earlywebbutton a {
+    text-decoration:none;
+    color:transparent;
+}
+/* credit to idkwhereisthisname for the early web buttons idea ''https://idkwh.ct8.pl'' */
