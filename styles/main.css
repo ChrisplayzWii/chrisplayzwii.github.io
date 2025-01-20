@@ -205,5 +205,6 @@ button:hover {
 #earlywebbutton a {
     text-decoration:none;
     color:transparent;
+    cursor: url("/images/wiicursorremake_hover.png"), pointer;
 }
 /* credit to idkwhereisthisname for the early web buttons idea ''https://idkwh.ct8.pl'' */
