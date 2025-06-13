@@ -1,4 +1,3 @@
-# ChrisplayzWii's Website!
-THE WEBSITE IS UNDERGOINT MAINTENANCE, IT WILL BE BACK SOON!!!
+# ChrisplayzWii's Website (maintenance version)
 
 (DO NOT PUT THIS BRANCH INTO MAIN.)
